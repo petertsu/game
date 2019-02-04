@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="format-detection" content="telephone=no">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Snap ITC;
+        }
+        body {
+	margin: 0;
+	overflow: hidden;
+	background-color:white;
+    font-family: Snap ITC;
+		}
+		
+	#phaser-app {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+		
+	canvas {
+		width: 100%;
+		height: 100%;
+	}
+    #login {
+        visibility: hidden;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        width:100%;
+        height:100%;
+        text-align:center;
+        align-items: center;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        background: rgba(255, 255, 255, 0.4)
+    }
+
+    input[type=text], input[type=password] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius:15px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #ff8c00;
+    color: #723e15;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    border-radius:15px;
+    font-size: 32px;
+}
+
+.container{
+    margin-top: -150px;
+    padding: 20px;
+    width:80%;
+    background-color: #ffcc00;
+    border-radius: 25px;
+}
+
+h1{
+    color:rgb(224, 30, 150);
+    font-size: 48px;
+}
+    </style>
+    <title>
+        Webpack4 Phaser3 Boilerplate
+    </title>
+    
+</head>
+
+<body>
+    <div id="phaser-app"></div>
+    <div id="login">
+        <div class="container">
+            <h1>Login</h1>
+            <input type="text" id="username" placeholder="Enter Username" name="username" required>
+            <input type="password" id="password" placeholder="Enter Password" name="password" required>
+            <button type="button" id="loginBtn">Login</button>
+        </div>
+    </div>
+<script type="text/javascript" src="vendor.b33b7d1113daf10496a8.js"></script><script type="text/javascript" src="bundle.56e5562a22e720347b99.js"></script></body>
+
+</html>
